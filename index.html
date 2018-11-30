@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>PRUEBA PROGRAMACION VISUAL N° 1</title>
+    <script>
+      function resultado() {
+        var p1, p2, p3, p4, p5,p6,p7,p8,p9,p10,nota
+
+        if (document.getElementById('p11').checked==true) {p1=1}
+        else {p1=0}
+
+        if (document.getElementById('p21').checked==true) {p2=1}
+        else {p2=0}
+
+        if (document.getElementById('p32').checked==true) {p3=1}
+        else {p3=0}
+
+        if (document.getElementById('p43').checked==true) {p4=1}
+        else {p4=0}
+
+        if(document.getElementById('p51').checked==true) {p5=1}
+        else {p5=0}
+
+        if(document.getElementById('p62').checked==true) {p6=1}
+        else {p6=0}
+
+        if(document.getElementById('p71').checked==true) {p7=1}
+        else {p7=0}
+
+        if(document.getElementById('p83').checked==true) {p8=1}
+        else {p8=0}
+
+        if(document.getElementById('p91').checked==true) {p9=1}
+        else {p9=0}
+
+        if(document.getElementById('p102').checked==true) {p10=1}
+        else {p10=0}
+
+        nota=p1+p2+p3+p4+p5+p6+p7+p8+p9+p10;
+        alert("Obtuvo una calificacion de: " + nota);
+        location.reload();
+      }
+    </script>
+    </head>
+  <body>
+    <h2>PRUEBA DE PROGRAMACION VISUAL N° 1</h2>
+    <hr>
+    <form style="font:normal 16px sans-serif">
+    <p>1.-¿Qué es Scratch?</p>
+    <input type="radio" name="pregunta1" id="p11"> Lenguaje de animación </p>
+    <input type="radio" name="pregunta1" id="p12"> Lenguaje de programación</p>
+    <input type="radio" name="pregunta1" id="p13"> Editor de texto </p>
+    <input type="radio" name="pregunta1" id="p14"> Programa para ver imagenes</p>
+
+    <p>2.-El icono de Scratch es un Perro</p>
+    <input type="radio" name="pregunta2" id="p21"> Verdadero</p>
+    <input type="radio" name="pregunta2" id="p22"> Falso</p>
+
+    <p>3.-Para mover un Objeto en Scratch hacia adelante o hacia atrás, se utiliza la instrucción?</p>
+    <input type="radio" name="pregunta3" id="p31"> Girar 15 grados.</p>
+    <input type="radio" name="pregunta3" id="p32"> Dar la vuelta al objeto.</p>
+    <input type="radio" name="pregunta3" id="p33"> mover 10 pasos.</p>
+    <input type="radio" name="pregunta3" id="p34"> No se.</p>
+
+    <p>4.-En Scratch podemos crear: </p>
+    <input type="radio" name="pregunta4" id="p41"> Facturas.</p>
+    <input type="radio" name="pregunta4" id="p42"> Diapositivas.</p>
+    <input type="radio" name="pregunta4" id="p43"> Cartas.</p>
+    <input type="radio" name="pregunta4" id="p44"> Juegos</p>
+
+    <p>5.- Los principales tipos de datos son:</p>
+    <input type="radio" name="pregunta5" id="p51"> De tipo entero, reales, caracteres, logicos</p>
+    <input type="radio" name="pregunta5" id="p52"> De tipo numericos y alfabeticos</p>
+    <input type="radio" name="pregunta5" id="p53"> Solo alfanumericos</p>
+    <input type="radio" name="pregunta5" id="p54"> Solo simbolos</p>
+
+    <p>6.-¿Cuál de estos operadores se utiliza para concatenar cadenas de caracteres?</p>
+    <input type="radio" name="pregunta6" id="p61"> %</p>
+    <input type="radio" name="pregunta6" id="p62"> $</p>
+    <input type="radio" name="pregunta6" id="p63"> +</p>
+    <input type="radio" name="pregunta6" id="p64"> ;</p>
+
+    <p>7.-Cuando declaras variables en Javascript se utiliza la siguiente palabra reservada:</p>
+    <input type="radio" name="pregunta7" id="p71"> DIM</p>
+    <input type="radio" name="pregunta7" id="p72"> VAR</p>
+    <input type="radio" name="pregunta7" id="p73"> STORE</p>
+    <input type="radio" name="pregunta7" id="p74"> PUBLIC</p>
+
+    <p>8.-¿Qué comando es necesario para crear un repositorio?</p>
+    <input type="radio" name="pregunta8" id="p81"> git status</p>
+    <input type="radio" name="pregunta8" id="p82"> git add</p>
+    <input type="radio" name="pregunta8" id="p83"> git init</p>
+    <input type="radio" name="pregunta8" id="p84"> git config</p>
+
+    <p>9.-Si deseas obtener una copia de un repositorio Git existente en GitHub, el comando que necesitas es :</p>
+    <input type="radio" name="pregunta9" id="p91"> git clone</p>
+    <input type="radio" name="pregunta9" id="p92"> git log</p>
+    <input type="radio" name="pregunta9" id="p93"> git add</p>
+    <input type="radio" name="pregunta9" id="p94"> git commit</p>
+
+    <p>10.-En git cual es el primer estado en el que podemos encontrar nuestros archivos</p>
+    <input type="radio" name="pregunta10" id="p101"> Committed</p>
+    <input type="radio" name="pregunta10" id="p102"> Modified</p>
+    <input type="radio" name="pregunta10" id="p103"> Staged</p>
+    <hr>
+    <p><input type="button" value=" Terminar" onclick="resultado()"/></p>
+    </form>
+    </body>
+</html>
